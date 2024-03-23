@@ -8,7 +8,7 @@ body {
   padding-top:5rem;
 }
 .main-container{
-  background-color: white;
+  background-color: #f2f2f2;
   height: 70vh;
   width: 75%;
   margin: auto;
@@ -26,13 +26,28 @@ h3{
 
 .numbers-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: center;
 }
 
 .tile{
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 0 0 15%;
   box-shadow: 1px;
-  background-color:blue;
+  background-color: white;
+  box-shadow: 0 1px  5px #9fa0a1;
   width: 50px;
+  margin-top:5%;
   height: 50px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.tile-active {
+  background-color: #75eb9a;
 }
