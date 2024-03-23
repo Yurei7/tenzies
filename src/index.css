@@ -9,10 +9,10 @@ body {
 }
 .main-container{
   background-color: #f2f2f2;
-  height: 70vh;
-  width: 75%;
+  height: 60vh;
+  width: 80%;
   margin: auto;
-  padding:1rem 0.5rem;
+  padding:1rem 2rem;
 
   
 }
@@ -46,8 +46,24 @@ h3{
   justify-content: center;
   font-size: 30px;
   font-weight: bold;
+  cursor: pointer;
+
 }
 
 .tile-active {
   background-color: #75eb9a;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 25px;
+  margin-top: 3.5rem;
+  border: none;
+  box-shadow: 0 1px  5px #9fa0a1;
+  cursor: pointer;
+
+
 }
