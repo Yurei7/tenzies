@@ -5,7 +5,7 @@ import { data, getRandomNum } from "./data.js"
 
 function App() {
   const [numbers, setNumbers] = useState(data)
-  const [win, setWin]=useState(false)
+  const [win, setWin] = useState(false)
 
 
   useEffect(() => {
@@ -13,12 +13,12 @@ function App() {
     const firstValue = selectedTiles[0]?.value
     const allSameValue = selectedTiles.every(tile => tile.value === firstValue)
     if (allSameValue && selectedTiles.length === numbers.length) {
-       setWin(prevWin=>!prevWin)
+      setWin(prevWin => !prevWin)
       launchConfetti()
-      }
-      else {
+    }
+    else {
 
-      }
+    }
   }, [numbers])
 
 
@@ -52,18 +52,19 @@ function App() {
     });
   }
 
-function resetGame(){
-  setWin(false)
-  setNumbers(prevNumbers=> {
-    return prevNumbers.map(tile=> {
-      return {...tile, selected:false, value:getRandomNum()}
+  function resetGame() {
+    setWin(false)
+    setNumbers(prevNumbers => {
+      return prevNumbers.map(tile => {
+        return { ...tile, selected: false, value: getRandomNum() }
+      })
     })
-  })
-}
+  }
 
   return <main className="main-container">
     <div className="text-container">
-      <h1>Tenzies</h1>
+
+ <h1>Tenzies</h1>
       <h3>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</h3>
     </div>
     <div className="numbers-container">
